@@ -31,7 +31,9 @@ module.exports = {
                 targetDir = JS_FOLDER_PATH
                 await fs.remove(TS_FOLDER_PATH)
             }
-            await fs.move(targetDir, ROOT_TEMPLATE_PATH)
+            await fs.move(targetDir, ROOT_TEMPLATE_PATH, {
+                overwrite: true
+            })
         } catch (error) {
             print.error(error)
         }
