@@ -19,7 +19,8 @@ module.exports = {
         try {
             const TS_FOLDER_PATH = resolve(configs.resourcePath, "./template/ts")
             const JS_FOLDER_PATH = resolve(configs.resourcePath, "./template/js")
-            const ROOT_TEMPLATE_PATH = resolve(configs.resourcePath, "./template/src")
+            const ROOT_TEMPLATE_PATH = resolve(configs.resourcePath, "./template")
+            const ROOT_TEMPLATE_PATH_TEMP = resolve(configs.resourcePath, "./temp")
             let targetDir = ""
 
             const { useWhichEsType } = await prompt(question)
@@ -31,7 +32,8 @@ module.exports = {
                 targetDir = JS_FOLDER_PATH
                 fs.remove(TS_FOLDER_PATH)
             }
-            fs.move(targetDir, ROOT_TEMPLATE_PATH)
+            await fs.move(targetDir, ROOT_TEMPLATE_PATH_TEMP)
+            await fs.move(ROOT_TEMP_TEMPLATE_PATH, ROOT_TEMPLATE_PATH)
         } catch (error) {
             print.error(error)
         }
