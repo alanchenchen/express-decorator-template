@@ -19,7 +19,7 @@ module.exports = {
         try {
             const TS_FOLDER_PATH = resolve(configs.resourcePath, "./template/ts")
             const JS_FOLDER_PATH = resolve(configs.resourcePath, "./template/js")
-            const ROOT_TEMPLATE_PATH = resolve(configs.resourcePath, "./template")
+            const ROOT_TEMPLATE_PATH = resolve(configs.resourcePath, "./template/src")
             let targetDir = ""
 
             const { useWhichEsType } = await prompt(question)
