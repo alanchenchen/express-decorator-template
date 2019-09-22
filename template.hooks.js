@@ -20,20 +20,18 @@ module.exports = {
             const TS_FOLDER_PATH = resolve(configs.resourcePath, "./template/ts")
             const JS_FOLDER_PATH = resolve(configs.resourcePath, "./template/js")
             const ROOT_TEMPLATE_PATH = resolve(configs.resourcePath, "./template")
-            const ROOT_TEMPLATE_PATH_TEMP = resolve(configs.resourcePath, "./temp")
             let targetDir = ""
 
             const { useWhichEsType } = await prompt(question)
             if(useWhichEsType === "typescript") {
                 targetDir = TS_FOLDER_PATH
-                fs.remove(JS_FOLDER_PATH)
+                await fs.remove(JS_FOLDER_PATH)
             }
             if(useWhichEsType === "ecmascript") {
                 targetDir = JS_FOLDER_PATH
-                fs.remove(TS_FOLDER_PATH)
+                await fs.remove(TS_FOLDER_PATH)
             }
-            await fs.move(targetDir, ROOT_TEMPLATE_PATH_TEMP)
-            await fs.move(ROOT_TEMPLATE_PATH_TEMP, ROOT_TEMPLATE_PATH)
+            await fs.move(targetDir, ROOT_TEMPLATE_PATH)
         } catch (error) {
             print.error(error)
         }
