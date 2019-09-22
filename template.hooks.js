@@ -33,7 +33,7 @@ module.exports = {
                 fs.remove(TS_FOLDER_PATH)
             }
             await fs.move(targetDir, ROOT_TEMPLATE_PATH_TEMP)
-            await fs.move(ROOT_TEMP_TEMPLATE_PATH, ROOT_TEMPLATE_PATH)
+            await fs.move(ROOT_TEMPLATE_PATH_TEMP, ROOT_TEMPLATE_PATH)
         } catch (error) {
             print.error(error)
         }
