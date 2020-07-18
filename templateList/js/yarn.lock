@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@alanchenchen/express-decorator@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@alanchenchen/express-decorator/-/express-decorator-0.0.2.tgz#bfb729e78f23f3506fe8bceb7a39e08923c86e4b"
-  integrity sha512-ZwbZus64kZ8JGeqk6e/9wqYSP7A89TRU7640w9fwsXaejHsR5V8IOs3ukBaZ4R1wduwn1654XI66Jmn2hY32nA==
+"@alanchenchen/express-decorator@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@alanchenchen/express-decorator/-/express-decorator-0.0.3.tgz#3f5bb7b5134b672158cc62ba0b348ac04b90361c"
+  integrity sha512-m46T/RP6wwrH6D3T3CwQTP5MH616jZLtkwHsTFThrl2bv/bma3zaRiBnSUsw4B9k5pZnMi0gmQGTyMB8+h6/TQ==
   dependencies:
     "@types/express" "^4.17.1"
     express "^4.17.1"
@@ -1362,9 +1362,9 @@ locate-path@^3.0.0:
     path-exists "^3.0.0"
 
 lodash@^4.17.11:
-  version "4.17.15"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
-  integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
+  version "4.17.19"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
+  integrity sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
 
 log-symbols@2.2.0:
   version "2.2.0"
