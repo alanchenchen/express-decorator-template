@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@alanchenchen/express-decorator@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@alanchenchen/express-decorator/-/express-decorator-0.0.2.tgz#bfb729e78f23f3506fe8bceb7a39e08923c86e4b"
-  integrity sha512-ZwbZus64kZ8JGeqk6e/9wqYSP7A89TRU7640w9fwsXaejHsR5V8IOs3ukBaZ4R1wduwn1654XI66Jmn2hY32nA==
+"@alanchenchen/express-decorator@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@alanchenchen/express-decorator/-/express-decorator-0.0.3.tgz#3f5bb7b5134b672158cc62ba0b348ac04b90361c"
+  integrity sha512-m46T/RP6wwrH6D3T3CwQTP5MH616jZLtkwHsTFThrl2bv/bma3zaRiBnSUsw4B9k5pZnMi0gmQGTyMB8+h6/TQ==
   dependencies:
     "@types/express" "^4.17.1"
     express "^4.17.1"
@@ -2419,11 +2419,9 @@ typescript@^3.6.2:
   integrity sha512-lmQ4L+J6mnu3xweP8+rOrUwzmN+MRAj7TgtJtDaXE5PMyX2kCrklhg3rvOsOIfNeAWMQWO2F1GPc1kMD2vLAfw==
 
 undefsafe@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/undefsafe/-/undefsafe-2.0.2.tgz#225f6b9e0337663e0d8e7cfd686fc2836ccace76"
-  integrity sha1-Il9rngM3Zj4Njnz9aG/Cg2zKznY=
-  dependencies:
-    debug "^2.2.0"
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/undefsafe/-/undefsafe-2.0.5.tgz#38733b9327bdcd226db889fb723a6efd162e6e2c"
+  integrity sha512-WxONCrssBM8TSPRqN5EmsjVrsv4A8X12J4ArBiiayv3DyyG3ZlIg6yysuuSYdZsVz3TKcTg2fd//Ujd4CHV1iA==
 
 union-value@^1.0.0:
   version "1.0.1"
